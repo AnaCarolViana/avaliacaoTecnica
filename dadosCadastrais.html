@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/dadosCadastrais.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div class="cabecalho">
+    <button class="botao"><a href="cadastros.html">Meus cadastros</button></a>
+    </div>
+
+    <main>
+        <form id="form">
+            <h1>Dados Pessoais</h1>
+
+            <label for="nomeCompleto">Nome Completo</label>
+                <input type="text" name="name" size="17" id="nomeCompleto">
+                <br>
+
+			<label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" id="dataNascimento">
+                <br>
+
+			<label for="idade">Idade</label>
+				<input type="number" id="idade" placeholder="00">
+                <br>
+
+            <label for="email">Email</label>
+                <input type="email" id="email" placeholder="meuemail@exemplo.com">
+                <br>
+                
+            <label for="telefone">Telefone</label>
+                <input type="tel" size="12" id="telefone" class="form-control phone-ddd-mask" maxlength="10" placeholder="(XX) XXXX-XXXX">
+                
+            <label for="celular">Celular</label>
+            <input type="tel" size="14" id="celular" maxlength="11" placeholder="(XX) XXXXX-XXXX">
+                <br>
+                
+            <label for="logradouro">Logradouro</label>
+                <input type="text" size="15" id="logradouro">
+                <br>
+                
+            <label for="numero">Nº</label>
+                <input type="number" size="2" id="numero">
+
+            <label for="bairro">Bairro</label>
+                <input type="text" size="8" id="bairro">
+                <br>
+            
+            <label for="cidade">Cidade</label>
+                <input type="text" size="10" id="cidade">
+                
+            <label for="uf">UF</label>
+                <input type="text" size="2" id="uf" maxlength="2">
+                <br>
+
+        </form> 
+            <div id="botoes">
+                <input type="submit" value="Cadastrar" class="botoes">
+            </div>
+
+    </main>
+
+            <div class="cadastroSalvo"></div>
+        
+    <script src="js/jquery.js"></script>
+    <script src="js/dadosCadastrais.js"></script>
+</body>
+
+</html>
