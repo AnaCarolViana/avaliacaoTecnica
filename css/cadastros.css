@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(207, 207, 241);
+    margin: 2%;
+    font-size: 2ch;
+}
+
+h1 {
+    background-color: rgba(116, 116, 250, 0.568);
+    color: rgb(97, 96, 96);
+    font-size: 3ch;
+    padding: 1ch;
+    margin-bottom: 1ch;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+}
+
+.form {
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(99, 98, 98);
+    display: none;
+}
+
+#cadastrosSalvos th, tr {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(88, 87, 87);
+    font-family: 'Roboto Mono', monospace;
+    padding: 1ch;
+    background-color:rgba(183, 183, 248, 0.568);
+}
+
+#cadastrosSalvos td {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2ch;
+    padding: 1ch;
+    text-align: left;
+    background-color: rgb(203, 181, 243);
+    color: white;
+}
+
+input {
+    border-radius: 0.5ch;
+    padding: 0.5ch;
+    margin-bottom: 0.5ch;
+    color: rgb(122, 121, 121);
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    color: rgba(128, 128, 128, 0.151);
+    font-family: 'Muli', sans-serif;
+    margin-top: 10%;
+    text-align: center;
+}
