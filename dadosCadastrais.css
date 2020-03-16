@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(207, 207, 241);
+    margin: 2%;
+    font-size: 2ch;
+}
+
+h1 {
+    background-color: rgba(116, 116, 250, 0.568);
+    color: rgb(97, 96, 96);
+    font-size: 3ch;
+    padding: 1ch;
+    margin-bottom: 1ch;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+}
+
+#form {
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(99, 98, 98);
+}
+
+input {
+    border-radius: 0.5ch;
+    padding: 0.5ch;
+    margin-bottom: 0.5ch;
+    color: rgb(122, 121, 121);
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 1ch;
+    color: rgb(53, 52, 52);
+    font-size: 2ch;
+    padding: 1ch;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cadastrar:hover, .cadastros:hover  {
+    background: orange;
+    color: rgb(22, 22, 22);
+}
+
+footer {
+    color: rgba(128, 128, 128, 0.151);
+    font-family: 'Muli', sans-serif;
+    margin-top: 10%;
+    text-align: center;
+}
