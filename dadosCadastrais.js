@@ -1,8 +1,7 @@
 $(".cadastrar").click(cadastrar);
-$("#cadastroSalvo").click(novoCadastro)
 
 var nome = $("#nomeCompleto")
-var dataNascimento = $("#dataNascimento")
+var data = $("#dataNascimento")
 var idade = $("#idade")
 var email = $("#email")
 var telefone = $("#telefone")
@@ -25,20 +24,18 @@ function cadastrar(event) {
         },
         "data": JSON.stringify({
             "nome": nome.val(),
-            "dataNascimento": dataNascimento.val(),
+            "dataNascimento": data.val(),
             "idade": Number(idade.val()),
             "email": email.val(),
             "telefone": telefone.val(),
             "celular": celular.val()
         })
     };
+    console.log(idade.val())
 
     $.ajax(dadosPessoais).done(function(response) {
         console.log(response)
         cadastrarEndereco(response.data)
-        if (response.data == ""){
-          alert("Preencha todos os campos corretamente")
-        }
     })
 }
 
@@ -63,27 +60,5 @@ function cadastrarEndereco(pessoaId) {
 
     $.ajax(endereco).done(function(response) {
         console.log(response)
-        form.attr("disabled", true)
     })
-}
-function novoCadastro () {
-  form.attr("disabled", false)
-}
-
-function pegarTodos() {
-    var endereco = {
-        "url": "http://entrevista.starcorp.com.br/api/Pessoas/GetAll",
-        "method": "GET",
-        "timeout": 0,
-        "headers": {
-            "Chave": "F4BA6C0A-4E6A-4AD4-A9E0-918A0EF9E55F"
-        }
-    }
-    $.ajax(endereco).done(function(response) {
-        console.log(response)
-        
-        
-    })
-    
-}
-
+} 
